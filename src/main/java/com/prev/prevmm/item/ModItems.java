@@ -1,7 +1,6 @@
 package com.prev.prevmm.item;
 
 import com.prev.prevmm.Main;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
