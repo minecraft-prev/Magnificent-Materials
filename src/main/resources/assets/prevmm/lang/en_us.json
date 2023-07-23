@@ -2,6 +2,12 @@
   "item.prevmm.mithril_raw": "Raw Mithril",
   "item.prevmm.mithril_ingot": "Mithril Ingot",
 
-  "itemGroup.prevmm_1": "Magnificent Materials",
-  "itemGroup.prevmm_2": "Magnificent Armory"
+  "block.prevmm.mithril_ore": "Mithril Ore",
+  "block.prevmm.deepslate_mithril_ore": "Deepslate Mithril Ore",
+  "block.prevmm.netherrack_mithril_ore": "Netherrack Mithril Ore",
+  "block.prevmm.mithril_raw_block": "Block of Raw Mithril",
+  "block.prevmm.mithril_block": "Block of Mithril",
+
+  "itemGroup.prevmm_1": "§6Magnificent Materials",
+  "itemGroup.prevmm_2": "§4Magnificent Armory"
 }

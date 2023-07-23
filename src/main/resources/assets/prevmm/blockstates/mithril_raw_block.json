@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "prevmm:block/mithril_raw_block" }
+  }
+}

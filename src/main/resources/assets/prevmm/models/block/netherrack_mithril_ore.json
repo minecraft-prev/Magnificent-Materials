@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prevmm:block/netherrack_mithril_ore"
+  }
+}

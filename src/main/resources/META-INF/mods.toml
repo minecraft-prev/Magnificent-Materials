@@ -3,7 +3,7 @@ loaderVersion="[43,)"
 license="GNU GPLv3"
 [[mods]]
 modId="prevmm"
-version="0.0.1-1.19.2"
+version="0.0.2-1.19.2"
 displayName="Prev's Magnificent Materials"
 updateJSONURL="https://github.com/minecraft-prev/Magnificent-Materials"
 displayURL="https://github.com/minecraft-prev/Magnificent-Materials"
@@ -12,30 +12,22 @@ credits="Forge Developers & Contributers + Mojang & Minecraft"
 authors="prev"
 
 # Display Test controls the display for your mod in the server connection screen
-# MATCH_VERSION
-# IGNORE_SERVER_VERSION
-# IGNORE_ALL_VERSION
+# MATCH_VERSION, IGNORE_SERVER_VERSION, IGNORE_ALL_VERSION
 displayTest="MATCH_VERSION"
 
-description="Adding many new materials with standardized art and horse armor, etc to Minecraft. Most are metals."
+description="Adding many new materials with quality art and all the expected features to Minecraft."
 
 # A list of dependencies for this mod - use the. to indicate dependency for a specific mod.
 [[dependencies.prevmm]]
-    # the modid of the dependency
-    modId="forge" #mandatory
-    # Does this dependency have to exist - if not, ordering below must be specified
-    mandatory=true #mandatory
-    # The version range of the dependency
-    versionRange="[43,)" #mandatory
-    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
     ordering="NONE"
-    # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 
 [[dependencies.prevmm]]
     modId="minecraft"
     mandatory=true
-# This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.19.2,1.20)"
+    versionRange="[1.19.2]"
     ordering="NONE"
     side="BOTH"

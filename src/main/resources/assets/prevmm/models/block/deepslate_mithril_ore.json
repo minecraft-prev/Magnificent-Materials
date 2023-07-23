@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prevmm:block/deepslate_mithril_ore"
+  }
+}
