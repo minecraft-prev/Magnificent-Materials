@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "prevmm:mithril_raw_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "prevmm:mithril_raw"
+  }
+}

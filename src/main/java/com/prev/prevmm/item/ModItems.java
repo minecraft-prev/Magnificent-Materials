@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> MITHRIL_RAW = ITEMS.register("mithril_raw",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PREVMM_TAB_1)));
+    public static final RegistryObject<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PREVMM_TAB_1)));
     public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PREVMM_TAB_1)));
 

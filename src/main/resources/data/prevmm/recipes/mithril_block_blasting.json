@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 8000,
+  "experience": 8,
+  "group": "mithril_ingot_smelt",
+  "ingredient": {
+    "item": "prevmm:mithril_raw_block"
+  },
+  "result": "prevmm:mithril_block"
+}
