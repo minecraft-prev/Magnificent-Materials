@@ -3,7 +3,7 @@ loaderVersion="[43,)"
 license="GNU GPLv3"
 [[mods]]
 modId="prevmm"
-version="0.0.3-1.19.2"
+version="0.0.4-1.19.2"
 displayName="Prev's Magnificent Materials"
 updateJSONURL="https://github.com/minecraft-prev/Magnificent-Materials"
 displayURL="https://github.com/minecraft-prev/Magnificent-Materials"

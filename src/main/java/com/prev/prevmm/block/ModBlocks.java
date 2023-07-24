@@ -9,6 +9,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -39,8 +40,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.PREVMM_TAB_1);
     public static final RegistryObject<Block> MITHRIL_BLOCK = registerBlock("mithril_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.PREVMM_TAB_1);
+            () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
+                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), ModCreativeModeTab.PREVMM_TAB_1);
 
     // end section
 
