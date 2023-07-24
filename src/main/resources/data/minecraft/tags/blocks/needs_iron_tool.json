@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "prevmm:mithril_ore",
+    "prevmm:deepslate_mithril_ore",
+    "prevmm:netherrack_mithril_ore",
+    "prevmm:mithril_raw_block",
+    "prevmm:mithril_block"
+  ]
+}

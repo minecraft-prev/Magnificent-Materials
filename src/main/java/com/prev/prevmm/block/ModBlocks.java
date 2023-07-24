@@ -26,22 +26,22 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MITHRIL_ORE = registerBlock("mithril_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops(),
+                    .strength(5f).requiresCorrectToolForDrops(),
                     UniformInt.of(16,20)), ModCreativeModeTab.PREVMM_TAB_1);
     public static final RegistryObject<Block> DEEPSLATE_MITHRIL_ORE = registerBlock("deepslate_mithril_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops(),
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE),
                     UniformInt.of(16,20)), ModCreativeModeTab.PREVMM_TAB_1);
     public static final RegistryObject<Block> NETHERRACK_MITHRIL_ORE = registerBlock("netherrack_mithril_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops(),
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.NETHERRACK),
                     UniformInt.of(16,20)), ModCreativeModeTab.PREVMM_TAB_1);
     public static final RegistryObject<Block> MITHRIL_RAW_BLOCK = registerBlock("mithril_raw_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.PREVMM_TAB_1);
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.PREVMM_TAB_1);
     public static final RegistryObject<Block> MITHRIL_BLOCK = registerBlock("mithril_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
-                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), ModCreativeModeTab.PREVMM_TAB_1);
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), ModCreativeModeTab.PREVMM_TAB_1);
 
     // end section
 
