@@ -30,7 +30,8 @@ public class ModItems {
             () -> new Item(eztab1()));
 
     public static final RegistryObject<ArmorItem> MITHRIL_HELMET = ITEMS.register("mithril_helmet",
-            () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.HEAD, eztab2()));
+            () -> new MithrilArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.HEAD, eztab2()));
+
     public static final RegistryObject<ArmorItem> MITHRIL_CHESTPLATE = ITEMS.register("mithril_chestplate",
             () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.CHEST, eztab2()));
     public static final RegistryObject<ArmorItem> MITHRIL_LEGGINGS = ITEMS.register("mithril_leggings",
@@ -66,7 +67,6 @@ public class ModItems {
                 20,
                 null,
                 () -> Ingredient.of(ModItems.MITHRIL_INGOT.get()));
-        // LEVEL? Wood = 0, Stone/Gold = 1, Iron = 2, Diamond = 3, Netherite = 4 /
 
     }
 }

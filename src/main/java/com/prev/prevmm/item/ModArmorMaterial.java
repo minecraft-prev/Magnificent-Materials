@@ -3,11 +3,11 @@ package com.prev.prevmm.item;
 import com.prev.prevmm.Main;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
+import javax.annotation.Nonnull;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
@@ -38,7 +38,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
         this.sound = sound;
         this.toughness = toughness;
         this.knockbackResistance = knockbackResistance;
-        this.repairIngredient = repairIngredient;
+        this.repairIngredient = () -> Ingredient.of(ModItems.MITHRIL_INGOT.get());
     }
 
     public int getDurabilityForSlot(EquipmentSlot slot) {
@@ -53,14 +53,17 @@ public enum ModArmorMaterial implements ArmorMaterial {
         return this.enchantmentValue;
     }
 
+    @Nonnull
     public SoundEvent getEquipSound() {
         return this.sound;
     }
 
+    @Nonnull
     public Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
     }
 
+    @Nonnull
     public String getName() {
         return this.name;
     }
