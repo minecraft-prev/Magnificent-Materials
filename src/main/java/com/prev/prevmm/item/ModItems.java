@@ -1,7 +1,10 @@
 package com.prev.prevmm.item;
 
 import com.prev.prevmm.Main;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -11,15 +14,50 @@ public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.MOD_ID);
 
+    // these methods automate the creative tab assignments in each supplier
+    private static Item.Properties eztab1() {
+        return new Item.Properties().tab(ModCreativeModeTab.PREVMM_TAB_1);
+    }
+    private static Item.Properties eztab2() {
+        return new Item.Properties().tab(ModCreativeModeTab.PREVMM_TAB_2);
+    }
+
     public static final RegistryObject<Item> MITHRIL_RAW = ITEMS.register("mithril_raw",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PREVMM_TAB_1)));
+            () -> new Item(eztab1()));
     public static final RegistryObject<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PREVMM_TAB_1)));
+            () -> new Item(eztab1()));
     public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PREVMM_TAB_1)));
+            () -> new Item(eztab1()));
+
+    //public static final RegistryObject<ArmorItem> MITHRIL_HELMET = ITEMS.register("mithril_helmet",
+   //         () -> new ArmorItem(null, EquipmentSlot.HEAD, eztab2()));
+
+    public static final RegistryObject<SwordItem> MITHRIL_SWORD = ITEMS.register("mithril_sword",
+            () -> new SwordItem(Tiers.MITHRIL, 6, -2.4f, eztab2()));
+    public static final RegistryObject<PickaxeItem> MITHRIL_PICKAXE = ITEMS.register("mithril_pickaxe",
+            () -> new PickaxeItem(Tiers.MITHRIL, 4, -2.8f, eztab2()));
+    public static final RegistryObject<ShovelItem> MITHRIL_SHOVEL = ITEMS.register("mithril_shovel",
+            () -> new ShovelItem(Tiers.MITHRIL, 4, -3.0f, eztab2()));
+    public static final RegistryObject<AxeItem> MITHRIL_AXE = ITEMS.register("mithril_axe",
+            () -> new AxeItem(Tiers.MITHRIL, 8, -3.0f,eztab2()));
+    public static final RegistryObject<HoeItem> MITHRIL_HOE = ITEMS.register("mithril_hoe",
+            () -> new HoeItem(Tiers.MITHRIL, 1, -1.0f, eztab2()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
+    }
+
+    public static class Tiers {
+
+        public static final Tier MITHRIL = new ForgeTier(
+                3,
+                1231,
+                10.0f,
+                0f,
+                20,
+                null,
+                () -> Ingredient.of(ModItems.MITHRIL_INGOT.get()));
+        // LEVEL? Wood = 0, Stone/Gold = 1, Iron = 2, Diamond = 3, Netherite = 4 /
 
     }
 }

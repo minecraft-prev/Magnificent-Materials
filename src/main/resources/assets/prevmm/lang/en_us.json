@@ -9,6 +9,17 @@
   "block.prevmm.mithril_raw_block": "Block of Raw Mithril",
   "block.prevmm.mithril_block": "Block of Mithril",
 
+  "item.prevmm.mithril_sword": "Mithril Sword",
+  "item.prevmm.mithril_pickaxe": "Mithril Pickaxe",
+  "item.prevmm.mithril_shovel": "Mithril Shovel",
+  "item.prevmm.mithril_axe": "Mithril Axe",
+  "item.prevmm.mithril_hoe": "Mithril Hoe",
+
+  "item.prevmm.mithril_helmet": "Mithril Helmet",
+  "item.prevmm.mithril_chestplate": "Mithril Chestplate",
+  "item.prevmm.mithril_leggings": "Mithril Leggings",
+  "item.prevmm.mithril_boots": "Mithril Boots",
+
   "itemGroup.prevmm_1": "§6Magnificent Materials",
   "itemGroup.prevmm_2": "§4Magnificent Armory"
 }

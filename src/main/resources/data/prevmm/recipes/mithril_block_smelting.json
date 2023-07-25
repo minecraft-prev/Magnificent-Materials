@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "cookingtime": 16000,
-  "experience": 8,
+  "experience": 64,
   "group": "mithril_ingot_smelt",
   "ingredient": {
     "item": "prevmm:mithril_raw_block"
