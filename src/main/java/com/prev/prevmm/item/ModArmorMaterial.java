@@ -11,13 +11,14 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
+
     MITHRIL(Main.MOD_ID + ":mithril",
             30, new int[]{3, 6, 8, 3},
             50,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
             2.0F,
             0.1F,
-            () -> { return Ingredient.of(ModItems.MITHRIL_INGOT.get()); });
+            () -> Ingredient.of(ModItems.MITHRIL_INGOT.get()));
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;
@@ -27,7 +28,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
     private final SoundEvent sound;
     private final float toughness;
     private final float knockbackResistance;
-    private final LazyLoadedValue<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
     ModArmorMaterial(String name, int durability, int[] protection, int enchantability, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
@@ -37,7 +38,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
         this.sound = sound;
         this.toughness = toughness;
         this.knockbackResistance = knockbackResistance;
-        this.repairIngredient = new LazyLoadedValue<>(repairIngredient);
+        this.repairIngredient = repairIngredient;
     }
 
     public int getDurabilityForSlot(EquipmentSlot slot) {
