@@ -29,25 +29,34 @@ public class ModItems {
     public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
             () -> new Item(eztab1()));
 
-    //public static final RegistryObject<ArmorItem> MITHRIL_HELMET = ITEMS.register("mithril_helmet",
-   //         () -> new ArmorItem(null, EquipmentSlot.HEAD, eztab2()));
+    public static final RegistryObject<ArmorItem> MITHRIL_HELMET = ITEMS.register("mithril_helmet",
+            () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.HEAD, eztab2()));
+    public static final RegistryObject<ArmorItem> MITHRIL_CHESTPLATE = ITEMS.register("mithril_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.CHEST, eztab2()));
+    public static final RegistryObject<ArmorItem> MITHRIL_LEGGINGS = ITEMS.register("mithril_leggings",
+            () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.LEGS, eztab2()));
+    public static final RegistryObject<ArmorItem> MITHRIL_BOOTS = ITEMS.register("mithril_boots",
+            () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.FEET, eztab2()));
+
+    //public static final RegistryObject<ArmorItem> MITHRIL_BOOTS = ITEMS.register("mithril_boots",
+    //       () -> new HorseArmorItem(eztab2()));
 
     public static final RegistryObject<SwordItem> MITHRIL_SWORD = ITEMS.register("mithril_sword",
-            () -> new SwordItem(Tiers.MITHRIL, 6, -2.4f, eztab2()));
+            () -> new SwordItem(ToolTiers.MITHRIL, 6, -2.4f, eztab2()));
     public static final RegistryObject<PickaxeItem> MITHRIL_PICKAXE = ITEMS.register("mithril_pickaxe",
-            () -> new PickaxeItem(Tiers.MITHRIL, 4, -2.8f, eztab2()));
+            () -> new PickaxeItem(ToolTiers.MITHRIL, 4, -2.8f, eztab2()));
     public static final RegistryObject<ShovelItem> MITHRIL_SHOVEL = ITEMS.register("mithril_shovel",
-            () -> new ShovelItem(Tiers.MITHRIL, 4, -3.0f, eztab2()));
+            () -> new ShovelItem(ToolTiers.MITHRIL, 4, -3.0f, eztab2()));
     public static final RegistryObject<AxeItem> MITHRIL_AXE = ITEMS.register("mithril_axe",
-            () -> new AxeItem(Tiers.MITHRIL, 8, -3.0f,eztab2()));
+            () -> new AxeItem(ToolTiers.MITHRIL, 8, -3.0f,eztab2()));
     public static final RegistryObject<HoeItem> MITHRIL_HOE = ITEMS.register("mithril_hoe",
-            () -> new HoeItem(Tiers.MITHRIL, 1, -1.0f, eztab2()));
+            () -> new HoeItem(ToolTiers.MITHRIL, 1, -1.0f, eztab2()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
 
-    public static class Tiers {
+    public static class ToolTiers {
 
         public static final Tier MITHRIL = new ForgeTier(
                 3,

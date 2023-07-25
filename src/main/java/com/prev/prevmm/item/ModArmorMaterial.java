@@ -12,10 +12,10 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
     MITHRIL(Main.MOD_ID + ":mithril",
-            20, new int[]{4, 7, 9, 4},
+            30, new int[]{3, 6, 8, 3},
             50,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
-            3.0F,
+            2.0F,
             0.1F,
             () -> { return Ingredient.of(ModItems.MITHRIL_INGOT.get()); });
 
