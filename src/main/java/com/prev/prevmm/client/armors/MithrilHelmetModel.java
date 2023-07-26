@@ -14,7 +14,7 @@ public class MithrilHelmetModel extends AnimatedGeoModel<MithrilArmorItem> {
 
     @Override
     public ResourceLocation getTextureResource(MithrilArmorItem object) {
-        return new ResourceLocation(Main.MOD_ID, "textures/models/mithril_helmet_armor");
+        return new ResourceLocation(Main.MOD_ID, "textures/models/mithril_helmet_armor.png");
     }
 
     @Override
