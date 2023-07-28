@@ -5,7 +5,7 @@ import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class MithrilArmorRenderer extends GeoArmorRenderer<MithrilArmorItem> {
     public MithrilArmorRenderer() {
-        super(new MithrilHelmetModel());
+        super(new MithrilArmorModel());
 
         this.headBone = "armorHead";
         this.bodyBone = "armorBody";

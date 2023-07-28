@@ -31,13 +31,12 @@ public class ModItems {
 
     public static final RegistryObject<ArmorItem> MITHRIL_HELMET = ITEMS.register("mithril_helmet",
             () -> new MithrilArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.HEAD, eztab2()));
-
     public static final RegistryObject<ArmorItem> MITHRIL_CHESTPLATE = ITEMS.register("mithril_chestplate",
-            () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.CHEST, eztab2()));
+            () -> new MithrilArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.CHEST, eztab2()));
     public static final RegistryObject<ArmorItem> MITHRIL_LEGGINGS = ITEMS.register("mithril_leggings",
-            () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.LEGS, eztab2()));
+            () -> new MithrilArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.LEGS, eztab2()));
     public static final RegistryObject<ArmorItem> MITHRIL_BOOTS = ITEMS.register("mithril_boots",
-            () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.FEET, eztab2()));
+            () -> new MithrilArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.FEET, eztab2()));
 
     //public static final RegistryObject<ArmorItem> MITHRIL_BOOTS = ITEMS.register("mithril_boots",
     //       () -> new HorseArmorItem(eztab2()));
