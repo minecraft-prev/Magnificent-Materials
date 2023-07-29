@@ -4,6 +4,8 @@ package com.prev.prevmm;
 import com.prev.prevmm.block.ModBlocks;
 import com.prev.prevmm.client.ClientArmor;
 import com.prev.prevmm.item.ModItems;
+import com.prev.prevmm.worldgen.ModConfiguredFeatures;
+import com.prev.prevmm.worldgen.ModPlacedFeatures;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,8 +27,12 @@ public class Main {
         GeckoLib.initialize();
 
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModConfiguredFeatures.CONFIGURED_FEATURES.register(modEventBus);
+        ModPlacedFeatures.PLACED_FEATURES.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
