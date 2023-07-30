@@ -40,10 +40,10 @@ public class ModConfiguredFeatures {
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> DEEPSLATE_MITHRIL_ORE =
             CONFIGURED_FEATURES.register("deepslate_mithril_ore", () ->
-                    new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(DEEPSLATE_MITHRIL_REPLACEMENT.get(), 6)));
+                    new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(DEEPSLATE_MITHRIL_REPLACEMENT.get(), 5)));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> NETHERRACK_MITHRIL_ORE =
             CONFIGURED_FEATURES.register("netherrack_mithril_ore", () ->
-                    new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHERRACK_MITHRIL_REPLACEMENT.get(), 6)));
+                    new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHERRACK_MITHRIL_REPLACEMENT.get(), 5)));
 
 }

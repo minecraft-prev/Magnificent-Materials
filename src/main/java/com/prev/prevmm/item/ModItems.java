@@ -39,7 +39,7 @@ public class ModItems {
             () -> new MithrilArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.FEET, eztab2()));
 
     public static final RegistryObject<HorseArmorItem> HORSE_ARMOR_MITHRIL = ITEMS.register("horse_armor_mithril",
-            () -> new HorseArmorItem(11, "mithril", (new Item.Properties()).stacksTo(1).tab(ModCreativeModeTab.PREVMM_TAB_2)));
+            () -> new HorseArmorItem(11, "mithril", (new Item.Properties()).stacksTo(1).tab(CreativeModeTab.TAB_MISC)));
 
 
     public static final RegistryObject<SwordItem> MITHRIL_SWORD = ITEMS.register("mithril_sword",
@@ -51,7 +51,7 @@ public class ModItems {
     public static final RegistryObject<AxeItem> MITHRIL_AXE = ITEMS.register("mithril_axe",
             () -> new AxeItem(ToolTiers.MITHRIL, 8, -3.0f,eztab2()));
     public static final RegistryObject<HoeItem> MITHRIL_HOE = ITEMS.register("mithril_hoe",
-            () -> new HoeItem(ToolTiers.MITHRIL, 1, -1.0f, eztab2()));
+            () -> new HoeItem(ToolTiers.MITHRIL, 0, 0f, eztab2()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

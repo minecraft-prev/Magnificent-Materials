@@ -16,19 +16,19 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> REPLACE_STONE_MITHRIL_ORE = PLACED_FEATURES.register("stone_mithril_ore",
             () -> new PlacedFeature(ModConfiguredFeatures.MITHRIL_ORE.getHolder().get(),
-                    commonOrePlacement(12, HeightRangePlacement.uniform(
+                    commonOrePlacement(6, HeightRangePlacement.uniform(
                             VerticalAnchor.bottom(),
                             VerticalAnchor.absolute(18)
                     ))));
     public static final RegistryObject<PlacedFeature> REPLACE_DEEPSLATE_MITHRIL_ORE = PLACED_FEATURES.register("deepslate_mithril_ore",
             () -> new PlacedFeature(ModConfiguredFeatures.DEEPSLATE_MITHRIL_ORE.getHolder().get(),
-                    commonOrePlacement(12, HeightRangePlacement.uniform(
+                    commonOrePlacement(6, HeightRangePlacement.uniform(
                             VerticalAnchor.bottom(),
                             VerticalAnchor.top()
                     ))));
     public static final RegistryObject<PlacedFeature> REPLACE_NETHERRACK_MITHRIL_ORE = PLACED_FEATURES.register("netherrack_mithril_ore",
             () -> new PlacedFeature(ModConfiguredFeatures.NETHERRACK_MITHRIL_ORE.getHolder().get(),
-                    commonOrePlacement(12, HeightRangePlacement.uniform(
+                    commonOrePlacement(6, HeightRangePlacement.uniform(
                             VerticalAnchor.bottom(),
                             VerticalAnchor.top()
                     ))));
