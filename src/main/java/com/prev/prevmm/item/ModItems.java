@@ -24,9 +24,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> MITHRIL_RAW = ITEMS.register("mithril_raw",
             () -> new Item(eztab1()));
-    public static final RegistryObject<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget",
-            () -> new Item(eztab1()));
     public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
+            () -> new Item(eztab1()));
+    public static final RegistryObject<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget",
             () -> new Item(eztab1()));
 
     public static final RegistryObject<ArmorItem> MITHRIL_HELMET = ITEMS.register("mithril_helmet",
@@ -38,8 +38,9 @@ public class ModItems {
     public static final RegistryObject<ArmorItem> MITHRIL_BOOTS = ITEMS.register("mithril_boots",
             () -> new MithrilArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.FEET, eztab2()));
 
-    //public static final RegistryObject<ArmorItem> MITHRIL_BOOTS = ITEMS.register("mithril_boots",
-    //       () -> new HorseArmorItem(eztab2()));
+    public static final RegistryObject<HorseArmorItem> HORSE_ARMOR_MITHRIL = ITEMS.register("horse_armor_mithril",
+            () -> new HorseArmorItem(11, "mithril", (new Item.Properties()).stacksTo(1).tab(ModCreativeModeTab.PREVMM_TAB_2)));
+
 
     public static final RegistryObject<SwordItem> MITHRIL_SWORD = ITEMS.register("mithril_sword",
             () -> new SwordItem(ToolTiers.MITHRIL, 6, -2.4f, eztab2()));
