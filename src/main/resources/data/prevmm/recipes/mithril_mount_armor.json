@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "prevmm:mithril_ingot"
+    },
+    "Y": {
+      "item": "minecraft:saddle"
+    },
+    "Z": {
+      "item": "prevmm:mithril_block"
+    }
+  },
+  "pattern": [
+    "X  ",
+    "ZYX",
+    "X X"
+  ],
+  "result": {
+    "item": "prevmm:horse_armor_mithril"
+  }
+}
