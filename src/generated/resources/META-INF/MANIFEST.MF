@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: C:\Users\Administrator\Desktop\Foundry\PMM-1.19.2\src\main\j
+ ava\com\prev\prevmm\Main.java
+

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "prevmm:mithril_ingot"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " XX",
+    " Y ",
+    " Y "
+  ],
+  "result": {
+    "item": "prevmm:mithril_hoe"
+  }
+}
